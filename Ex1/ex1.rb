@@ -1,4 +1,3 @@
-# puts "bài 1"
 name = "Trần Văn Khánh"
 msv = "1911505310229"
 puts "Xin chào " + name + " " + msv
