@@ -1,13 +1,14 @@
-# bài 1
-# name = "Trần Văn Khánh"
-# puts "Xin chào " + name
+# puts "bài 1"
+name = "Trần Văn Khánh"
+msv = "1911505310229"
+puts "Xin chào " + name + " " + msv
 
-#  bài 2
-# puts "Nhập số cần in"
-# num = gets
-# puts num
+puts  "========bài 2========"
+print "Nhập số cần in : "
+num = gets
+puts "Số đã nhập : " + num
 
-# bài 3
+puts "========bài 3========"
 print "Nhập số thứ nhất : "
 num1 = gets.to_f
 print "Nhập số thứ hai : "
