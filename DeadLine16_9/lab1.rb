@@ -1,6 +1,8 @@
-arr = []
-print "Nhap: "
-for i in (0..2) do
-  arr[i] = gets()
+# arr = []
+s = 0
+for i in (1..10) do
+  # arr[i] = gets()
+  next if i % 5 != 0
+  s += i
 end
-puts arr[1]
+puts s
