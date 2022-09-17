@@ -1,8 +1,13 @@
-# arr = []
-s = 0
-for i in (1..10) do
-  # arr[i] = gets()
-  next if i % 5 != 0
-  s += i
+# Nhập các số vào mảng, in ra số lớn nhất, nhỏ nhất, giá trị trung bình của mảng.
+print "Nhập số lượng phần tử mảng: "
+n = gets().to_i
+arr = []
+s = 0.0
+puts "Nhập phần tử mảng "
+for i in (0..n-1) do
+  arr[i] = gets().to_f
+  s = s + arr[i]
 end
-puts s
+agv = s/arr.length
+puts "Giá trị lớn nhất và nhỏ nhất : #{arr.minmax()} "
+puts "Giá trị trung bình của mảng #{agv}" 
