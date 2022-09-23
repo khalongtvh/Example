@@ -28,5 +28,5 @@ class Student
 end
 
 p = Student.new()
-p.inputInfo("Trần Văn Khánh", 1911505310229, 10, 10, 9)
+p.inputInfo("Trần Văn Khánh", 1911505310229, 9.7, 10, 9)
 p.show_info
