@@ -1,39 +1,37 @@
 class CanBo
-  attr_accessor :name, :age, :gender, :address    
-  def initialize(name, age, gender, address)
-    self.name = name
-    self.gender = gender
-    self.age = age
-    self.address = address
+  attr_accessor :name_229, :age_229, :gender_229, :address_229    
+  def initialize(name_229, age_229, gender_229, address_229)
+    self.name_229 = name_229
+    self.gender_229 = gender_229
+    self.age_229 = age_229
+    self.address_229 = address_229
   end
 
   def display()
-    puts "NAME : #{@name} AGE : #{@age} -- GENDER : #{@gender}"
+    puts "NAME : #{@name_229} AGE : #{@age_229} -- GENDER : #{@gender_229}"
   end
 end
 
-
-
 class NhanVien < CanBo
-  attr_accessor :task
-  def initialize(name, age, gender, address, task)
-    super(name, age, gender, address)
-    self.task = task
+  attr_accessor :task_229
+  def initialize(name_229, age_229, gender_229, address_229, task_229)
+    super(name_229, age_229, gender_229, address_229)
+    self.task_229 = task_229
   end
 
   def display()
     super
-    puts"TASK : #{@task}"
+    puts"TASK : #{@task_229}"
   end
 end
 
 class KySu < CanBo
-  attr_accessor :branch
+  attr_accessor :branch_229
   # def initialize()
   # end
-  def initialize(name, age, gender, address, branch)
-    super(name, age, gender, address)
-    self.branch = branch
+  def initialize(name_229, age_229, gender_229, address_229, branch_229)
+    super(name_229, age_229, gender_229, address_229)
+    self.branch_229 = branch_229
   end
 
   def display()
@@ -43,65 +41,65 @@ class KySu < CanBo
 end
 
 class CongNhan < CanBo
-  attr_accessor :level
+  attr_accessor :level_229
   # def initialize()
   # end
 
-  def initialize(name, age, gender, address, level)
-    super(name, age, gender, address)
-    self.level = level
+  def initialize(_229, age_229, gender_229, address_229, level_229)
+    super(name_229, age_229, gender_229, address_229)
+    self.level_229 = level_229
   end
 
   def display()
     super
-    puts"LEVEL : #{@level}"
+    puts"LEVEL : #{@level_229}"
   end
 end
 
 class QLCB 
-  attr_accessor :CanBoList
-  CanBoList = []
+  attr_accessor :CanBoList_229
+  CanBoList_229 = []
   def initialize()
     # self.CB = []
   end
-  def SearchByName(name1)
-    for i in (0..CanBoList.length - 1 ) do
-      if (CanBoList[i].name == name1)
-        CanBoList[i].display()
+  def SearchByName(name1_229)
+    for i_229 in (0..CanBoList_229.length - 1 ) do
+      if (CanBoList_229[i_229].name_229 == name1_229)
+        CanBoList_229[i_229].display()
       end
     end
   end
-  def AddCanBo(canbo)
-    CanBoList << canbo
+  def AddCanBo(canbo_229)
+    CanBoList_229 << canbo_229
   end
 
   def display()
-    count = 0
-    for i in (0..CanBoList.length - 1) do
+    puts "Danh Sách Cán Bộ:"
+    for i_229 in (0..CanBoList_229.length - 1) do
       # puts i
-      CanBoList[i].display()
+      CanBoList_229[i_229].display()
     end
   end
 end
 
-QL = QLCB.new()
+QL_229 = QLCB.new()
 
-engineer = KySu.new("khanh Ky Su", 21, "male", "abc", "Ky Su 1")
-engineer1 = KySu.new("khanh Ky Su", 21, "male", "abc", "Ky Su 2")
-QL.AddCanBo(engineer)
-QL.AddCanBo(engineer1)
+engineer_229 = KySu.new("khanh Ky Su", 21, "male", "abc", "Ky Su 1")
+engineer1_229 = KySu.new("khanh Ky Su", 21, "male", "abc", "Ky Su 2")
+QL_229.AddCanBo(engineer_229)
+QL_229.AddCanBo(engineer1_229)
 
-staff1 = NhanVien.new("khanh", 21, "male", "abc", "Nhan Vien 1")
-staff2 = NhanVien.new("khanh Nhan Vien 1", 21, "male", "abc", "Nhan Vien 2")
-QL.AddCanBo(staff1)
-QL.AddCanBo(staff2)
+staff1_229 = NhanVien.new("khanh", 21, "male", "abc", "Nhan Vien 1")
+staff2_229 = NhanVien.new("khanh Nhan Vien 1", 21, "male", "abc", "Nhan Vien 2")
+QL_229.AddCanBo(staff1_229)
+QL_229.AddCanBo(staff2_229)
 
-worker1 = CongNhan.new("khanh Cong Nhan 1", 21, "male", "abc", "Cong Nhan 1")
-worker2 = CongNhan.new("khanh", 21, "male", "abc", "Cong Nhan 2")
-QL.AddCanBo(worker1)
-QL.AddCanBo(worker2)
+worker1_229 = CongNhan.new("khanh Cong Nhan 1", 21, "male", "abc", "Cong Nhan 1")
+worker2_229 = CongNhan.new("khanh", 21, "male", "abc", "Cong Nhan 2")
+QL_229.AddCanBo(worker1_229)
+QL_229.AddCanBo(worker2_229)
+# QL_229.display()
 
 print "Enter your name: "
-name1 = gets.chop
-QL.SearchByName(name1)
-# QL.display()
+name1_229 = gets.chop
+QL_229.SearchByName(name1_229)
