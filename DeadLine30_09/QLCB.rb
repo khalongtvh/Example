@@ -102,7 +102,6 @@ QL.AddCanBo(worker1)
 QL.AddCanBo(worker2)
 
 print "Enter your name: "
-name1 = "khanh"
-# name1 = gets.to_s
+name1 = gets.chop
 QL.SearchByName(name1)
 # QL.display()
