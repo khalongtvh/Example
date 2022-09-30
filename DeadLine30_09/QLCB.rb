@@ -45,7 +45,7 @@ class CongNhan < CanBo
   # def initialize()
   # end
 
-  def initialize(_229, age_229, gender_229, address_229, level_229)
+  def initialize(name_229, age_229, gender_229, address_229, level_229)
     super(name_229, age_229, gender_229, address_229)
     self.level_229 = level_229
   end
@@ -63,6 +63,7 @@ class QLCB
     # self.CB = []
   end
   def SearchByName(name1_229)
+    puts "Resulf : "
     for i_229 in (0..CanBoList_229.length - 1 ) do
       if (CanBoList_229[i_229].name_229 == name1_229)
         CanBoList_229[i_229].display()
@@ -98,7 +99,7 @@ worker1_229 = CongNhan.new("khanh Cong Nhan 1", 21, "male", "abc", "Cong Nhan 1"
 worker2_229 = CongNhan.new("khanh", 21, "male", "abc", "Cong Nhan 2")
 QL_229.AddCanBo(worker1_229)
 QL_229.AddCanBo(worker2_229)
-# QL_229.display()
+QL_229.display()
 
 print "Enter your name: "
 name1_229 = gets.chop
