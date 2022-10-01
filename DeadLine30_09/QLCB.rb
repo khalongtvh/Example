@@ -86,19 +86,34 @@ end
 QL_229 = QLCB.new()
 
 engineer_229 = KySu.new("khanh Ky Su", 21, "male", "abc", "Ky Su 1")
-engineer1_229 = KySu.new("khanh Ky Su", 21, "male", "abc", "Ky Su 2")
+# engineer1_229 = KySu.new("khanh Ky Su", 21, "male", "abc", "Ky Su 2")
 QL_229.AddCanBo(engineer_229)
-QL_229.AddCanBo(engineer1_229)
+# QL_229.AddCanBo(engineer1_229)
 
 staff1_229 = NhanVien.new("khanh", 21, "male", "abc", "Nhan Vien 1")
-staff2_229 = NhanVien.new("khanh Nhan Vien 1", 21, "male", "abc", "Nhan Vien 2")
+# staff2_229 = NhanVien.new("khanh Nhan Vien 1", 21, "male", "abc", "Nhan Vien 2")
 QL_229.AddCanBo(staff1_229)
-QL_229.AddCanBo(staff2_229)
+# QL_229.AddCanBo(staff2_229)
 
-worker1_229 = CongNhan.new("khanh Cong Nhan 1", 21, "male", "abc", "Cong Nhan 1")
+# worker1_229 = CongNhan.new("khanh Cong Nhan 1", 21, "male", "abc", "Cong Nhan 1")
 worker2_229 = CongNhan.new("khanh", 21, "male", "abc", "Cong Nhan 2")
-QL_229.AddCanBo(worker1_229)
+# QL_229.AddCanBo(worker1_229)
 QL_229.AddCanBo(worker2_229)
+# QL_229.display()
+puts "Enter Info "
+print ("Name: ")
+name_229 = gets.chop
+print ("Age: ")
+age_229 = gets.chop
+print ("Address: ")
+address_229 = gets.chop
+print ("Gender: ")
+gender_229 = gets.chop
+print ("Bracnh: ")
+branch_229 = gets.chop
+
+engineer3_229 = KySu.new(name_229, age_229, gender_229, address_229, branch_229)
+QL_229.AddCanBo(engineer3_229)
 QL_229.display()
 
 print "Enter your name: "
