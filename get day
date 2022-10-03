@@ -1,0 +1,1 @@
+Time.now.strftime("%A, %d/%m/%Y")

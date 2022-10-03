@@ -1,0 +1,19 @@
+1. Include Method
+  Values = [10,20,30,40,50]
+  values.include? 20
+  => true
+2. Using the Select Method
+  values = [10,20,30,40,50]
+  values.select {|i| i > 33}
+  => [40, 50]
+3. Using the Index Method
+  values = [10,20,30,40,50]
+  values.index 40
+  => 3
+4. Using the Find Method
+  values = [1,2,9,5,4,9,2,1]
+  values.find {|i| i % 2 == 0}
+5.Using the find_index
+  values = [1,2,9,5,4,9,2,1]
+  values.find_index {|i| i % 2 == 0}
+  => 1
