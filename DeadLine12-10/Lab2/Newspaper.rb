@@ -1,9 +1,17 @@
 require './Document'
 class Newspaper < Document
   attr_accessor :dayIssue
-  def initialize(id, nxb, number, dayIssue)
+  
+  
+  def initData(id, nxb, number, dayIssue)
     super(id, nxb, number)
     self.dayIssue = dayIssue
+  end
+  
+  def create()
+    super()
+    print "Day Issue : "
+    self.dayIssue = gets.chop()
   end
 
   def display()

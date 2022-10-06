@@ -24,5 +24,6 @@ class DocumentManager
     puts "\n================= Document List ================="
     DocumentList.each do |document| document.display()
     end
+    puts "\n====================== End ======================"
   end
 end
