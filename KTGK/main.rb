@@ -71,25 +71,3 @@ loop do
     break
   end
 end
-
-
-# xeMay = XeMay.new()
-# xeMay1 = XeMay.new()
-# xeMay2 = XeMay.new()
-# xeMay3 = XeMay.new()
-# xeMay1.initData('1', 'hangXe1_229', 'nsx_229', 'giaBan_229', 'bienSo1_229', 'mauXe1_229', 'congXuat_229', 'dungTich_229')
-# xeMay2.initData('2', 'hangXe2_229', 'nsx_229', 'giaBan_229', 'bienSo2_229', 'mauXe1_229', 'congXuat_229', 'dungTich_229')
-# xeMay3.initData('3', 'hangXe1_229', 'nsx_229', 'giaBan_229', 'bienSo3_229', 'mauXe2_229', 'congXuat_229', 'dungTich_229')
-# xeMay.initData('4', 'hangXe2_229', 'nsx_229', 'giaBan_229', 'bienSo4_229', 'mauXe4_229', 'congXuat_229', 'dungTich_229')
-# # xeMay.display()
-# ql = QLPTGT.new()
-# ql.addCar(xeMay)
-# ql.addCar(xeMay1)
-# ql.addCar(xeMay2)
-# ql.addCar(xeMay3)
-# # ql.searchByHangXe('hangXe1_229')
-# # ql.searchByMauXe('mauXe1_229')
-# ql.searchByBienSo('bienSo2_229')
-# # ql.display()
-# # ql.removeCar('3')
-
