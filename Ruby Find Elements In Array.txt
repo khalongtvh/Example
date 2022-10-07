@@ -17,3 +17,10 @@
   values = [1,2,9,5,4,9,2,1]
   values.find_index {|i| i % 2 == 0}
   => 1
+6. remove element in array
+  a= [1,2,3,4,5,6]
+  delete_list = [2,5]
+  delete_list.each do |del|
+      a.delete_at(a.index(del))
+  end
+  a.each do |del| puts del end

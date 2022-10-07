@@ -13,16 +13,34 @@ class Hotel
   def CalRent(personId)
     List.each do |person| 
       if (person.id.eql?( personId))
+        checkin_date = person.checkin_date
+        checkout_date = person.checkout_date
+        numberRent = (checkin_date...checkout_date).count
+        if numberRent == 0
+          numberRent = 1
+        end
+        person.rent = numberRent * person.room.price.to_f
         person.display()
-        puts "Rent : #{person.numberRent.to_f * person.room.price.to_f}"
+        # puts "Rent : #{}"
       end
     end
   end
 
+  def getYearCheckinDate()
+    years = []
+    List.each do |person|
+      years << person.checkin_date.year
+    end
+    years.sort()
+    # xoá năm trùng trong Years[]
+    # years.each do |year| puts "Year : #{year}"
+    end
+  end
   # xoá khách theo số chứng minh nhân dân
   def removePerson(personID)
     List.delete_if { |person| person.id.eql?( personID ) }
-    display()
+    # display()
+    puts "==>Remove successfully!"
   end
 
   def display()
