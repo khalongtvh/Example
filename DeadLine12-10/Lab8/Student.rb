@@ -7,6 +7,7 @@ class Student
   end
 
   def display()
-    puts "#{self.name} || #{self.age} || #{self.classs}"
+    puts "\t========= Student Information ========= "
+    puts "\tName : #{self.name} || Age : #{self.age} || Class : #{self.classs}"
   end
 end

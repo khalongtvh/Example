@@ -6,16 +6,18 @@ require './AClass'
 require './BClass'
 require './CClass'
 require './ManagerCandidate'
-studentA = AClass.new('1', 'name', 'address', 'priority')
-studentB = BClass.new('21', 'name', 'address', 'priority')
-studentC = CClass.new('3', 'name', 'address', 'priority')
+studentA = AClass.new('1', 'tran khanh', 'da nang', '1')
+studentB = BClass.new('21', 'khanh', 'quang nam', '0')
+studentC = CClass.new('3', 'tran', 'da nang', '2')
 # studentA.display()
 managerCandidate = ManagerCandidate.new()
 managerCandidate.addCandidate(studentA)
 managerCandidate.addCandidate(studentB)
 managerCandidate.addCandidate(studentC)
-managerCandidate.display()
-managerCandidate.Seach('1')
+# managerCandidate.display()
+print "Enter your id:"
+idNew = gets.chop()
+managerCandidate.Seach(idNew)
 
 # x = [1,2,3,4,5]
 # y = [0,2,3]

@@ -10,6 +10,6 @@ class Student
   end
 
   def display()
-    puts "id: #{self.id} -- name: #{self.name} -- address: #{self.address} -- priority -- #{self.priority}"
+    puts "id: #{self.id} || name: #{self.name} || address: #{self.address} || priority : #{self.priority}"
   end
 end

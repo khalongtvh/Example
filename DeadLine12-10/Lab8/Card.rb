@@ -10,6 +10,7 @@ class Card
   end
 
   def display()
-    puts "id card = #{self.id} student name = #{self.student.name}"
+    puts "Id card : #{self.id} || Borrow Date: #{self.borrowDate} || Payment Date: #{self.paymentDate}" 
+    self.student.display()
   end
 end

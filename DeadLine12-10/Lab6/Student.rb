@@ -10,6 +10,6 @@ class Student
 
   # hiển thị thông tin của mỗi học sinh.
   def display()
-    puts "#{self.name} == #{self.age} == #{self.hometown} == #{self.classs}"
+    puts "Name : #{self.name} || age: #{self.age} || Hometown : #{self.hometown} || class : #{self.classs}"
   end
 end

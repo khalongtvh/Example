@@ -17,6 +17,7 @@ class School
     end
   end
   def display()
+    puts "=========================== List Student ============================="
     ListStudent.each do |student| student.display() end
   end
 end

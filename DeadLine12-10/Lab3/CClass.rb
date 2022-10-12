@@ -10,6 +10,6 @@ class CClass < Student
 
   def display()
     super()
-    puts "C Class: #{self.GradeC}"
+    puts "\tC Class: #{self.GradeC}"
   end
 end

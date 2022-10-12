@@ -1,15 +1,19 @@
 require './ManagerTeacher'
 require './Teacher'
 
-teacher1 = Teacher.new('1', 'name', 'age', 'hometown', 10000, 1000, 100)
-teacher2 = Teacher.new('2', 'name', 'age', 'hometown', 10000, 1000, 100)
-teacher3 = Teacher.new('3', 'name', 'age', 'hometown', 10000, 1000, 100)
+teacher1 = Teacher.new('1', 'tran khanh', 22, 'QN', 150000, 1000, 100)
+teacher2 = Teacher.new('2', 'le a', 21, 'DN', 10000, 1000, 100)
+teacher3 = Teacher.new('3', 'nguyen tran', 32, 'QN', 10000, 1000, 100)
 
 manager = ManagerTeacher.new()
 
 manager.addTeacher(teacher1)
 manager.addTeacher(teacher2)
 manager.addTeacher(teacher3)
-manager.cal_realSalary('1')
+
 manager.display()
+puts "===================== Calculation Real Salary ====================="
+print "Enter your id teacher : "
+idTeacher = gets.chop()
+manager.cal_realSalary(idTeacher)
 

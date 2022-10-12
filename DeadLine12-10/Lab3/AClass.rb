@@ -17,6 +17,6 @@ class AClass < Student
   end
   def display()
     super()
-    puts "A Class: #{self.GradeA}"
+    puts "\tA Class: #{self.GradeA}"
   end
 end

@@ -13,6 +13,7 @@ class ManagerCandidate
     end
   end
   def display()
+    puts"=========================== List Student ==========================="
     List.each do |candidate| candidate.display() end
   end
 end
