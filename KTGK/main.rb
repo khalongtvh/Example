@@ -5,6 +5,8 @@ require './XeMay'
 require './XeTai'
 ql = QLPTGT.new()
 loop do
+
+  puts "Họ Tên : Trần Văn Khánh"
   puts "================== Menu ================="
   puts "1.Thêm Phương Tiện!"
   puts "2.Hiển Thị Danh Sách Phương Tiện!"

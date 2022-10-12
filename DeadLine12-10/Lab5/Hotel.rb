@@ -25,17 +25,6 @@ class Hotel
       end
     end
   end
-
-  def getYearCheckinDate()
-    years = []
-    List.each do |person|
-      years << person.checkin_date.year
-    end
-    years.sort()
-    # xoá năm trùng trong Years[]
-    # years.each do |year| puts "Year : #{year}"
-    end
-  end
   # xoá khách theo số chứng minh nhân dân
   def removePerson(personID)
     List.delete_if { |person| person.id.eql?( personID ) }

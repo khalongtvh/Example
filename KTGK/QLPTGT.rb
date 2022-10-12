@@ -7,6 +7,8 @@ class QLPTGT
 
   def removeCar(carId)
     CarList.delete_if { |x| x.id_229 == carId  }
+    puts "===>Xoá Thành Công!"
+    puts "Danh Sách Phương Tiện Còn Lại: "
     display()
   end
 
